@@ -44,7 +44,7 @@ export default function Home() {
             <DrawerContent className="mb-10">
               <p className="m-8 hyphens-auto text-center">O conteúdo desta enciclopédia contém revelações significativas sobre todas as obras do Brandon Sanderson. Leia por sua conta e risco.</p>
               <DrawerClose>
-                <Button variant="outline">Estou ciente</Button>
+                <Button>Estou ciente</Button>
               </DrawerClose>
             </DrawerContent>
           </Drawer>
