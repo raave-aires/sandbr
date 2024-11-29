@@ -10,6 +10,13 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/src/components/ui/tooltip"
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerTrigger,
+} from "@/src/components/ui/drawer"
+
 
 
 export default function Home() {
@@ -21,7 +28,7 @@ export default function Home() {
           <div>
           <TooltipProvider>
             <Tooltip>
-              <TooltipTrigger className="cursor-help">
+              <TooltipTrigger className="cursor-help hidden lg:block">
                 <Badge variant="destructive">Alerta de spoilers!</Badge>
               </TooltipTrigger>
               <TooltipContent className="w-80 bg-background border text-white hyphens-auto ml-4">
@@ -29,6 +36,18 @@ export default function Home() {
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>
+
+          <Drawer>
+            <DrawerTrigger className="lg:hidden">
+              <Badge variant="destructive">Alerta de spoilers!</Badge>
+            </DrawerTrigger>
+            <DrawerContent className="mb-10">
+              <p className="m-8 hyphens-auto text-center">O conteúdo desta enciclopédia contém revelações significativas sobre todas as obras do Brandon Sanderson. Leia por sua conta e risco.</p>
+              <DrawerClose>
+                <Button variant="outline">Estou ciente</Button>
+              </DrawerClose>
+            </DrawerContent>
+          </Drawer>
 
             
           </div>
