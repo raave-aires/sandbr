@@ -16,5 +16,6 @@
     "ui": "@/src/components/ui",
     "examples": "@/components/examples",
     "blocks": "@/src/components/blocks"
-  }
+  },
+  "iconLibrary": "lucide"
 }
